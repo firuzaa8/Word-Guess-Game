@@ -11,13 +11,17 @@
 </head>
 <body>
 <h1>Word Guess Game</h1>
-<h2 id ="start">Press any key to start</h2>
+<h2 id ="start">Press Any Key to Start</h2>
 <div id ="game" style = "display: none;">
 <h1 id="word"></h1>
 <h2>Hint: <span id="hint"></span></h2>
-<p>Wins: <span id="wins"></span></p>
-<p>Letters Guessed: <span id="lettersGuessed"></span></p>
-<p>Remaining Guesses: <span id="remainingGuesses"></span></p>
+<button id ="startOver" onclick="newGame()">Start over</button>
+<img id="pic" width="500">
+<div id = "stats">
+    <p>Letters Guessed: <span id="lettersGuessed"></span></p>
+    <p>Remaining Guesses: <span id="remainingGuesses"></span></p>
+    <p>Wins: <span id="wins"></span></p>
+</div>
 </div>
 </body>
 </html>
