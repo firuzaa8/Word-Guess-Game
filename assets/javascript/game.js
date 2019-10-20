@@ -92,6 +92,9 @@ document.onkeyup = function(event) {
     }
     if (remainingGuesses == 0) {
         alert ("You lose");
+        gameArray = pcRandomPick.word.split("")
+        document.getElementById("pic").style.display = "block";
+        document.getElementById("pic").src = "assets/images/"+pcRandomPick.word + ".jpg"
     }
     // if matched letters equal to length of the word, display win and a pic
     if (lettersMatchCount == pcRandomPick.word.length) {
